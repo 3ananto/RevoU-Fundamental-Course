@@ -3,7 +3,7 @@ function calculate() {
         let weightInput = document.getElementById('weight-input').value;
             console.log(weightInput);
 
-        if (weightInput == '') {
+        if (parseInt(weightInput) > 0 && parseInt(weightInput) < 100) {
             alert('Harap isi berat badan Anda')
             console.log('Kosong');
         } else {
